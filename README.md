@@ -1,2 +1,3 @@
-# winscp
-Download and unpacks WinSCP
+# winscp'
+
+Chef cookbook for downloading and installing WinSCP
