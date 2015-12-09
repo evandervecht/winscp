@@ -9,8 +9,8 @@
 
 windows_package node['winscp']['package_name'] do
   source node['winscp']['url']
-  options "/DIR=\"#{node['winscp']['install_path']}\" /SP- /SUPPRESSMSGBOXES /LOG=""#{node['winscp']['log_path']}\\Install_WinScp.log"" /CLOSEAPPLICATIONS /NOICONS /COMPONENTS=""WinSCP application"" /TASKS="""
-  installer_type :inno
+  options "/DIR=\"#{node['winscp']['install_path']}\" /VERYSILENT /NORESTART"
+  installer_type :custom
   action :install
   not_if do
    File.exists?("#{node['winscp']['install_path']}")

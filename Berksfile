@@ -1,3 +1,3 @@
-source 'https://supermarket.chef.io'
+source 'https://github.com/ridiculousness/winscp'
 
 metadata
